@@ -16,9 +16,7 @@ import java.util.Stack;
 public class ArrayStack<Integer> extends Stack {
 
     private Integer[] data = null;
-//    private int top = 0;
-//    private Integer first;
-//    private ArrayStack<Integer> rest;
+
 
     public ArrayStack() {
         data = (Integer[]) new Object[10];

@@ -28,7 +28,7 @@ public class CalculatorMain {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             System.out.print("Enter values" + "\n");
             String s = " ";
-            // LinkedPath lp;
+            
             while (!s.equals("stop")) {
                 s = br.readLine();
 
@@ -46,14 +46,11 @@ public class CalculatorMain {
         if (list.isEmpty()) {
             return;
         }
-        //   LinkedPath lp = new LinkedPath();
+       
         for (int i = 0; i < list.size(); i++) {
             System.out.println("> " + list.get(i));
-            //list.remove(i);
+          
         }
-
-        //    list.clear();
-        //print(as);
     }
 
     public static void cal(String[] arr) {
@@ -64,21 +61,19 @@ public class CalculatorMain {
             }
             sym.add(arr[i]);
         }
-        //while (!sym.isEmpty()) {
+       
         for (int i = 0; i < sym.size(); i++) {
 
             String oper = sym.get(i);
             sym.remove(i);
             i = 0;
-//            System.out.println(oper);
-//            System.out.println("arr " + as.pop());
+
             switch (oper) {
 
                 case "+":
                     Integer sumfirstStack = Integer.parseInt(as.pop().toString());
                     Integer sumnextStack = Integer.parseInt(as.pop().toString());
                     as.push(sumfirstStack + sumnextStack);
-                    // System.out.println(as.size());
                     break;
                 case "-":
                     int subfirstStack = Integer.parseInt(as.pop().toString());
@@ -97,7 +92,7 @@ public class CalculatorMain {
                     as.push(divfirstStack / divnextStack);
                     break;
             }
-            //}
+           
         }
 
         print(as);
