@@ -48,9 +48,10 @@ public class CalculatorMain {
         }
        
         for (int i = 0; i < list.size(); i++) {
-            System.out.println("> " + list.get(i));
-          
+            System.out.println("> " + list.get(i)); 
         }
+        
+        list.clear();
     }
 
     public static void cal(String[] arr) {
